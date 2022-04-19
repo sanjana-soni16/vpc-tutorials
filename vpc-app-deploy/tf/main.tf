@@ -13,7 +13,7 @@ data "ibm_is_image" "os" {
 }
 
 module "vpc_pub_priv" {
-  source       = "../..//vpc-public-app-private-backend/tfmodule"
+  source       = "../../vpc-public-app-private-backend/tfmodule"
   basename     = local.BASENAME
   vpc_name     = local.BASENAME
   ssh_key_name = var.ssh_key_name
